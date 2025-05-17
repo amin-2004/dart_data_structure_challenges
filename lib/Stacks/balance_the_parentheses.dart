@@ -3,14 +3,14 @@ bool isBalanced(String input) {
 
   for (var char in input.split('')) {
     if (char == '(') {
-      stack.add(char); 
+      stack.add(char);
     } else if (char == ')') {
       if (stack.isEmpty) {
-        return false; 
+        return false;
       }
-      stack.removeLast(); 
+      stack.removeLast();
     }
   }
 
-  return stack.isEmpty; 
-  }
+  return stack.isEmpty;
+}
